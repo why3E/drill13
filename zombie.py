@@ -160,7 +160,7 @@ class Zombie:
         a5 = Action('소년으로부터 추적', self.move_to_boy)
         SEL_runaway_or_chase= Selector('도망 또는 추적', SEQ_runaway, a5)
 
-        SEQ_chase_boy = Sequence('소년에 대한 이동', c1,SEL_runaway_or_chase)
+        SEQ_chase_boy = Sequence('소년 추적', c1,SEL_runaway_or_chase)
 
         root = SEL_chase_or_wander = Selector('추적 또는 배회',SEQ_chase_boy, SEQ_wander )
 
